@@ -37,7 +37,7 @@ export function Header() {
               type="search"
               placeholder="O que você está procurando?"
               onChange={(event) =>
-                setTimeout(() => data.setSeachProduct(event.target.value), 400)
+                setTimeout(() => data.setSeachProduct(event.target.value), 300)
               }
             />
           </div>

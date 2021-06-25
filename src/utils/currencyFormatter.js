@@ -4,5 +4,3 @@ export function currencyFormatter(amout) {
     currency: 'BRL',
   }).format(amout.replace(',', '.'));
 }
-
-// TODO - refatorar para lib Temporal

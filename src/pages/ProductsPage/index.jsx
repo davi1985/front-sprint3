@@ -46,17 +46,17 @@ export function ProductsPage() {
         <section className="main__products">
           <ol className="products__list">
             {productsFiltered.length > 0
-              ? productsFiltered.map((product, index) => (
+              ? productsFiltered.map((product) => (
                   <Product
-                    key={index}
+                    key={product.sku}
                     imageUrl={product.image}
                     description={product.name}
                     price={product.price}
                   />
                 ))
-              : products.map((product, index) => (
+              : products.map((product) => (
                   <Product
-                    key={index}
+                    key={product.sku}
                     imageUrl={product.image}
                     description={product.name}
                     price={product.price}

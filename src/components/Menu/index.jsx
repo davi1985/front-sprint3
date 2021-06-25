@@ -9,8 +9,8 @@ export function Menu() {
   return (
     <nav className="header__menu menu">
       <ul className="menu__list">
-        {menuItems.map((item, index) => (
-          <MenuItem label={item.label} link={item.link} key={index} />
+        {menuItems.map((item) => (
+          <MenuItem label={item.label} link={item.link} key={item.id} />
         ))}
       </ul>
     </nav>

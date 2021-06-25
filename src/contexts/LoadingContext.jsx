@@ -16,6 +16,7 @@ export function LoadingProvider({ children }) {
   function removeRequest() {
     if (counterRequest <= 1) {
       setCounterRequest(0);
+
       setLoading(false);
     } else {
       setCounterRequest(counterRequest - 1);
